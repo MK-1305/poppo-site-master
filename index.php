@@ -1,44 +1,4 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>poppo-online-store</title>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css"/> 
-  </head>
-  <body>
-    <!-- ローディング画面 -->
-    <div id="loading">
-      <div class="spinner">
-        <div class="cube1"></div>
-        <div class="cube2"></div>
-      </div>
-    </div>
-
-    <header class="header">
-      <div class="header-content">
-        <div class="header-logo">
-          <a href="">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/POPPO.png" alt="logo">
-          </a>
-        </div>
-        <nav class="header-nav">
-          <ul>
-            <!-- 服のカテゴリーにする -->
-            <li><a href="https://poppo.fashionstore.jp/categories/5194314">tops</a></li>
-            <li><a href="https://poppo.fashionstore.jp/categories/5194952">bottoms</a></li>
-            <li><a href="https://poppo.fashionstore.jp/categories/5194465">one piece</a></li>
-            <li><a href="https://poppo.fashionstore.jp/categories/5299106">jacket</a></li>
-          </ul>
-          <div class="hamburger">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-          </div>
-        </nav>
-      </div>
-    </header>
-
+<?php get_header(); ?>
     <div class="scroll-wrap">
       <section>
         <div id="top" class="title">
@@ -111,13 +71,13 @@
             <div class="input-box">
               <input type="text" placeholder="お名前" required>
             </div>
-
+            
             <div class="input-box">
-              <input type="text" placeholder="件名" required>
+              <input type="text" placeholder="メールアドレス" required>
             </div>
 
             <div class="input-box">
-              <input type="text" placeholder="メールアドレス" required>
+              <input type="text" placeholder="件名" required>
             </div>
             
             <div class="input-box">
@@ -131,13 +91,5 @@
         <div class="circle2"></div>
         <div class="circle3"></div>
       </section>
-      
     </div>
-    <!-- 上から処理なのでjsは最後に -->
-    <script src="<?php echo get_template_directory_uri(); ?>/main.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/hamburger.js"></script>
-    <footer>
-      <p>&copy; poppo-online-store.</p>
-    </footer>
-  </body>
-</html>
+<?php get_footer(); ?>

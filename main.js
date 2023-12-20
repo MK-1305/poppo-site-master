@@ -31,14 +31,18 @@ let observer = new IntersectionObserver(setItemActive, options);
 // img-wrapは偶数と奇数で出現する場所を変える
 imagesItems.map((item, index) => {
   // テンプレート文字列でitemに背景画像を設定していく
-  item.children[0].style.backgroundImage = `url(./images/${index + 1}.jpg)`;
+  item.children[0].style.backgroundImage = `url(${
+    my_data.template_directory_uri
+  }/images/${index + 1}.jpg)`;
   // 三項演算子で偶数番目なら右に奇数なら左に配置する処理(0スタート)
   index % 2 == 0 ? (item.style.left = "55%") : (item.style.left = "5%");
   observer.observe(item);
 });
 
 titles.map((title, index) => {
-  index % 2 == 0 ? (title.style.transform = "translateX(5%)") : (title.style.transform = "translateX(102%)");
+  index % 2 == 0
+    ? (title.style.transform = "translateX(5%)")
+    : (title.style.transform = "translateX(102%)");
   observer.observe(title);
 });
 // 何を監視するか
@@ -47,8 +51,8 @@ observer.observe(release);
 
 // recommend
 thumbImages.forEach((thumbImage) => {
-    thumbImage.addEventListener('mouseover', (event) => {
-      mainImage.src = event.target.src;
-      mainImage.animate({opacity: [0,1]}, 500);
-    });
+  thumbImage.addEventListener("mouseover", (event) => {
+    mainImage.src = event.target.src;
+    mainImage.animate({ opacity: [0, 1] }, 500);
+  });
 });
