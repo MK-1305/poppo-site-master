@@ -708,6 +708,59 @@ footer p {
   color: #ffffff;
 }
 
+/* thanks css */
+.thanks {
+  display: flex;
+  height: 90vh;
+  width: 100vw;
+  align-items: center;
+}
+
+.complete {
+  margin: 5rem auto 0 auto;
+  text-align: center;
+  z-index: 1000;
+}
+
+.complete p {
+  display: block;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+span {
+  display: block;
+  margin-top: 1rem;
+}
+
+.btn {
+  width: 50%;
+  height: 3rem;
+  background: #ffffff;
+  border: solid 1px;
+  outline: none;
+  border-radius: 40px;
+  margin-top: 3rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--hover-button);
+  color: #ffffff;
+  animation: hover 0.3s ease forwards;
+}
+
+@keyframes hover {
+  0% {scale: 1;}
+  100% {scale: 1.2;}
+}
+
+@media (max-width: 600px) {
+  p {
+      font-size: 0.7rem;
+  }
+}
+
 /* contact form7 css */
 
 .wpcf7 input{

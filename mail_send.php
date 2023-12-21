@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+    <div class="thanks">
       <div class="complete">
         <h2>Thank you</h2>
         <p>
@@ -6,6 +7,7 @@
           <span>内容を確認させていただき</span><br />
           <span>２～３営業日以内に返信させていただきます</span>
         </p>
-        <button class="btn" onclick="location.href='./index.html'">TOP</button>
+        <button class="btn" onclick="location.href='https://poppo-fashionstore.com/'">TOP</button>
       </div>
+    </div>
 <?php get_footer(); ?>
