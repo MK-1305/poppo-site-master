@@ -67,24 +67,7 @@
         <div class="contact-box">
           <form action="">
             <p class="contact-title">contact</p>
-
-            <div class="input-box">
-              <input type="text" placeholder="お名前" required>
-            </div>
-            
-            <div class="input-box">
-              <input type="text" placeholder="メールアドレス" required>
-            </div>
-
-            <div class="input-box">
-              <input type="text" placeholder="件名" required>
-            </div>
-            
-            <div class="input-box">
-              <textarea name="内容" id="" cols="20" rows="5" placeholder="内容"></textarea>
-            </div>
-
-            <button type="submit" class="btn">送信</button>
+            <?php echo do_shortcode('[contact-form-7 id="42ecb5f" title="コンタクトフォーム 1"]'); ?>
           </form>
         </div>
         <div class="circle1"></div>
